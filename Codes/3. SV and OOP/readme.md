@@ -24,7 +24,7 @@ endmodule
 ```
 
 ---
-## 📜  
+## 📜  Allocating and Deallocating Memory and Updating Variable 
 ```verilog
 class first;
   reg [2:0] data; 
@@ -48,4 +48,5 @@ module tb;
 endmodule
 
 ```
+
 
