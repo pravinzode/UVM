@@ -3,6 +3,7 @@
 ---
 ## 📜 Defining Class Basics 
 -Demonstrate how to define class and handler(object) 
+-constructor function
 ```verilog
 class first;
   
