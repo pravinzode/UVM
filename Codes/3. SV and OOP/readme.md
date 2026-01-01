@@ -287,7 +287,7 @@ endmodule
 
 
 ##  Shallow Copy 
-```
+```verilog
 class first;
   int data = 12;
 endclass
