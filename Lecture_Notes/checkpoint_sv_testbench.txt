@@ -1,0 +1,46 @@
+Checkpoints
+A. Class Transaction
+
+1. Declare all the inputs and outputs with equivalent sizes
+2. Add modifiers ( randc, rand) to all inputs 
+3. Do not add modifieres to output ports
+
+B. Class Generator
+
+1. Generate random stimulus for inputs 
+2. send data to Driver with Mailbox
+3. Signify to Driver about completion of Stimuli generation using event 
+
+C. Interface
+
+1. Declare all the inputs and outputs with logic datatypes
+
+D. Class Driver
+
+1. Receives data from Generator through Mailbox
+2. Send data to interface
+
+E. Class Monitor 
+
+1. Receives data from Interface
+2. Send data to Scoreboard with Mailbox
+
+F. Class Scoreboard
+
+1. Receives data from Monitor 
+2. Compare with Golden Reference data
+
+G. Class Environment
+
+1. Initialze the class 
+2. connect the respective Mailbox
+3. Connect respective Event
+4. Connecdt respective Interfaces
+5. Schedule execution of different process
+
+H. Testbench Top
+
+1. Instance of Environment
+2. New method to Mailbox
+3. Connect Interface
+5. Perform connection between interface and DUT
