@@ -289,17 +289,12 @@ endmodule
 ##  Shallow Copy 
 ```
 class first;
-  
   int data = 12;
-  
 endclass
  
 class second;
-  
   int ds = 34;
-  
   first f1;
-  
   function new();
     f1 = new();
   endfunction  
